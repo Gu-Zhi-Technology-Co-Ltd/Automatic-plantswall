@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
-import java.net.Socket
+
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    fun press(view: View) {
+    fun press(@Suppress("UNUSED_PARAMETER")view: View) {
         show("111")
         Thread(Runnable {
             //Thread.sleep(1000)
@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
             //}
         }).start()
         show(sum)
+        println("finish")
 
 
 
