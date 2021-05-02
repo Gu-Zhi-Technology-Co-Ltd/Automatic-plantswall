@@ -15,6 +15,16 @@ class ClientSo(host: String, port: Int) : Socket(host, port) {
     var text = ""
 
 
+
+
+    fun setHandler(handler: Handler) {
+        this.handler = handler
+    }
+
+    fun sendMessage(string: String) {
+        writer?.println(string)
+    }
+
     fun run(): String? {
         while (true) {
             val line = reader.readLine()
