@@ -30,7 +30,7 @@ class ClientSo(host: String, port: Int) : Socket(host, port) {
             val line = reader.readLine()
             val conn= super.isConnected()
             if(conn)
-                return "ok"
+                return line
             else
                 return "fail"
             //if (line != null){

@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
         }).start()
         show(sum)
         println("finish")
+        println("test")
 
 
 
