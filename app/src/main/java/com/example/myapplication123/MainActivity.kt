@@ -10,8 +10,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
-    val host = "200.1.1.79"
-    val port = 2339
+    val host = "200.1.1.103"
+    val port = 8081
     var sum = ""
 
     fun  show(sum:String){
@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun press(@Suppress("UNUSED_PARAMETER")view: View) {
-        show("111")
+
         Thread(Runnable {
             //Thread.sleep(1000)
             //while (true) {
@@ -31,8 +31,6 @@ class MainActivity : AppCompatActivity() {
             //}
         }).start()
         show(sum)
-        println("finish")
-        println("test")
 
 
 

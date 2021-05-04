@@ -26,17 +26,10 @@ class ClientSo(host: String, port: Int) : Socket(host, port) {
     }
 
     fun run(): String? {
-        while (true) {
-            val line = reader.readLine()
-            val conn= super.isConnected()
-            if(conn)
-                return line
-            else
-                return "fail"
-            //if (line != null){
-            //return line
-            //}
-
-        }
+        val line = reader.readLine()
+        val conn= super.isConnected()
+        if(conn)
+            close()
+            return line
     }
 }
