@@ -7,9 +7,10 @@ PORT = 8081
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.bind((HOST, PORT))
 server.listen(10)
-conn, addr = server.accept()
-print("connected")
+
 while True:
+    conn, addr = server.accept()
+    print("connected")
     serverMessage = input()
     serverMessage = serverMessage+'\n'
     conn.sendall(serverMessage.encode())
