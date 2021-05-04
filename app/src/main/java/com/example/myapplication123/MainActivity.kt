@@ -21,7 +21,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun press(@Suppress("UNUSED_PARAMETER")view: View) {
-
         Thread(Runnable {
             //Thread.sleep(1000)
             //while (true) {
@@ -31,9 +30,6 @@ class MainActivity : AppCompatActivity() {
             //}
         }).start()
         show(sum)
-
-
-
     }
     //fun sds(view: View) {
     //show(sum)

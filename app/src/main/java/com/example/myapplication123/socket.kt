@@ -28,8 +28,9 @@ class ClientSo(host: String, port: Int) : Socket(host, port) {
     fun run(): String? {
         val line = reader.readLine()
         val conn= super.isConnected()
-        if(conn)
-            close()
+        if(line!= null)
             return line
+        else
+            return "fail"
     }
 }
