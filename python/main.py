@@ -15,7 +15,7 @@ while True:
     serverMessage = serverMessage+'\n'
     conn.sendall(serverMessage.encode())
     conn.close
-print('test')
+
 # for i in range(100):
 #     serverMessage = str(i)
 #     serverMessage = serverMessage+'\n'
