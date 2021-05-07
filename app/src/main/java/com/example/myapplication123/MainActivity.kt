@@ -1,18 +1,16 @@
 package com.example.myapplication123
-import android.content.Intent
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
     }
-    val host = "192.168.8.104"
+    val host = "200.1.1.103"
     val port = 8081
     var sum = ""
 
@@ -33,12 +31,6 @@ class MainActivity : AppCompatActivity() {
         }).start()
         show(sum)
     }
-    fun nice(){
-
-    }
-    //fun click(view: View) {
-
-    //}
     //fun sds(view: View) {
     //show(sum)
     //}

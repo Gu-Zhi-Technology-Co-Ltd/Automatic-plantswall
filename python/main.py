@@ -18,7 +18,7 @@ while True:
     serverMessage = input()
     serverMessage = serverMessage+'\n'
     conn.sendall(serverMessage.encode())
-    conn.close
+    conn.close()
 
 # for i in range(100):
 #     serverMessage = str(i)
