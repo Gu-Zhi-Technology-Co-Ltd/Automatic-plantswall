@@ -1,5 +1,6 @@
 package com.example.myapplication123
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -31,7 +32,8 @@ class MainActivity : AppCompatActivity() {
         }).start()
         show(sum)
     }
-    //fun sds(view: View) {
-    //show(sum)
-    //}
+    fun buttonch(view: View){
+        val intent = Intent(this, MainActivity2::class.java)
+        println("ch")
+    }
 }
