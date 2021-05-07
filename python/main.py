@@ -1,22 +1,28 @@
 # -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 import socket
 import time
-HOST = '200.1.1.103'
-PORT = 8081
+from read_sht10 import main2
+from read_sht10 import test_sht1x
+    
+HOST = '200.1.1.229'
+PORT = 8085
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.bind((HOST, PORT))
 server.listen(10)
 conn, addr = server.accept()
 print("connected")
-serverMessage = input()
+serverMessage = 'START'
 serverMessage = serverMessage+'\n'
 conn.sendall(serverMessage.encode())
 conn.close
 while True:
+    num = test_sht1x(22, 24)
     conn, addr = server.accept()
-    serverMessage = input()
-    serverMessage = serverMessage+'\n'
+    print('----------')
+    print(num)
+    serverMessage = 'humidity:'+str(num)
     conn.sendall(serverMessage.encode())
     conn.close()
 
