@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
-    val host = "200.1.1.103"
+    val host = "200.1.1.77"
     val port = 8081
     var sum = ""
 
@@ -32,8 +32,9 @@ class MainActivity : AppCompatActivity() {
         }).start()
         show(sum)
     }
-    fun buttonch(view: View){
+    fun buttonch(@Suppress("UNUSED_PARAMETER")view: View){
         val intent = Intent(this, MainActivity2::class.java)
+        startActivity(intent)
         println("ch")
     }
 }
