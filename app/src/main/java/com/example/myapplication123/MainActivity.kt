@@ -34,6 +34,6 @@ class MainActivity : AppCompatActivity() {
     }
     fun buttonch(view: View){
         val intent = Intent(this, MainActivity2::class.java)
-
+        println("ch")
     }
 }
