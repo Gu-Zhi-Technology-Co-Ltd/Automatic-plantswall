@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         }).start()
         show(sum)
     }
-    fun test(view: View){
+    fun nice(){
 
     }
     //fun click(view: View) {
