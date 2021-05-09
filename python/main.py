@@ -18,11 +18,14 @@ serverMessage = serverMessage+'\n'
 conn.sendall(serverMessage.encode())
 conn.close
 while True:
-    num = test_sht1x(22, 24)
+    hu1 = test_sht1x(22, 24)
+    hu2 = test_sht1x(22, 24)
+    hu3 = test_sht1x(22, 24)
+    hu4 = test_sht1x(22, 24)
     conn, addr = server.accept()
     print('----------')
     print(num)
-    serverMessage = 'humidity:'+str(num)
+    serverMessage = 'humidity:'+str(hu1)+";"+str(hu2)+";"+str(hu3)+";"+str(hu4)
     conn.sendall(serverMessage.encode())
     conn.close()
 
