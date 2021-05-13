@@ -18,9 +18,9 @@ serverMessage = serverMessage+'\n'
 conn.sendall(serverMessage.encode())
 conn.close
 while True:
-    hu1 = test_sht1x(22, 24)
-    hu2 = test_sht1x(22, 24)
-    hu3 = test_sht1x(22, 24)
+    hu1 = test_sht1x(12, 11)
+    hu2 = test_sht1x(13, 15)
+    hu3 = test_sht1x(16, 18)
     hu4 = test_sht1x(22, 24)
     conn, addr = server.accept()
     print('----------')
