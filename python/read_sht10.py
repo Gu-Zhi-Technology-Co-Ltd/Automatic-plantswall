@@ -1,7 +1,7 @@
 from time import sleep
 import RPi.GPIO as GPIO
 from pi_sht1x import SHT1x
-#import bh1750
+
 import time
 
 def test_sht1x(DATA_PIN, SCK_PIN):
