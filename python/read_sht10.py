@@ -1,7 +1,7 @@
 from time import sleep
 import RPi.GPIO as GPIO
 from pi_sht1x import SHT1x
-#import bh1750
+
 import time
 
 def test_sht1x(DATA_PIN, SCK_PIN):
@@ -15,14 +15,6 @@ def test_sht1x(DATA_PIN, SCK_PIN):
             sleep(2)
         print('Test complete.\n')
     
-
-
-def main2():
-    try:
-        test_sht1x(22, 24)
-    except Exception as e:
-        print(e)
-
 
 if __name__ == "__main__":
     main()

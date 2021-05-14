@@ -1,17 +1,4 @@
-#!/usr/bin/python3
-#+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-#|R|a|s|p|b|e|r|r|y|P|i|.|c|o|m|.|t|w|
-#+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-# Copyright (c) 2021, raspberrypi.com.tw
-# All rights reserved.
-# Use of this source code is governed by a BSD-style license that can be
-# found in the LICENSE file.
-#
-# led_blink.py
-# Blinking led without warning (Add try/except)
-#
-# Author : sosorry
-# Date   : 06/22/2014
+
 import RPi.GPIO as GPIO
 import time
 LED_PIN = 37
