@@ -7,12 +7,12 @@ import android.view.View
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//        setContentView(R.layout.activity_main)
-//    }
-    val host = "200.1.1.77"
-    val port = 8081
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+    }
+    val host = "200.1.1.229"
+    val port = 8080
     var sum = ""
 
     fun  show(sum:String){
@@ -26,11 +26,12 @@ class MainActivity : AppCompatActivity() {
             //Thread.sleep(1000)
             //while (true) {
             //show("222")
-            sum = ClientSo(host, port).run().toString()
-
+            sum= ClientSo(host, port).run().toString()
             //}
         }).start()
-        show(sum)
+        val data = sum.split(";")
+        show(data[0])
+
     }
     fun buttonch(@Suppress("UNUSED_PARAMETER")view: View){
         val intent = Intent(this, MainActivity2::class.java)
