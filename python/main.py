@@ -3,9 +3,9 @@ import socket
 import time
 from read_sht10 import main2
 from read_sht10 import test_sht1x
-    
+from led_blink import led
 HOST = '200.1.1.229'
-PORT = 8085
+PORT = 8080
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.bind((HOST, PORT))
@@ -26,9 +26,3 @@ while True:
     serverMessage = 'humidity:'+str(hu1)+";"+str(hu2)+";"+str(hu3)+";"+str(hu4)
     conn.sendall(serverMessage.encode())
     conn.close()
-
-# for i in range(100):
-#     serverMessage = str(i)
-#     serverMessage = serverMessage+'\n'
-#     conn.sendall(serverMessage.encode())
-#     conn.close()
