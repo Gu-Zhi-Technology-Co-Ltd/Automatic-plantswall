@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import socket
-import time
+# import time
 from read_sht10 import main2
 from read_sht10 import test_sht1x
 from led_blink import led
