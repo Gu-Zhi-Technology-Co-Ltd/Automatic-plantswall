@@ -17,7 +17,7 @@ Python 3.7
 
 
 ## Structure
-.
+```
 ├── .gradle
 ├── .idea                
 ├── app    
@@ -35,7 +35,7 @@ Python 3.7
 │   └── read_sht10.py   
 ├── LICENSE
 └── README.md                      
-
+```
 
 
 
