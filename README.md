@@ -17,7 +17,7 @@ Python 3.7
 
 
 ## Structure
-
+.
 ├── .gradle
 ├── .idea                
 ├── app    
