@@ -1,6 +1,6 @@
 # Automatic-plantswall
 Automatic-plantswall\
-南港高中數位科學實驗班 AIOT智慧務農植物牆
+南港高中數位科學實驗班 AIOT智慧務農植物牆專案
 ## Description
 Use Raspberry Pi to detect the temperature and humidity of the plantswall, and automatically water and switch lights. You can use your mobile phone to remotely monitor the various values of the plantswall.
 
