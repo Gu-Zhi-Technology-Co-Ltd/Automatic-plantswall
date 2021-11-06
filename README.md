@@ -17,6 +17,7 @@ Python 3.7
 
 
 ## Structure
+
 ├── .gradle
 ├── .idea                
 ├── app    
@@ -33,7 +34,7 @@ Python 3.7
 │   ├── pump_switch.py  
 │   └── read_sht10.py   
 ├── LICENSE
-├── README.md                      
+└── README.md                      
 
 
 
