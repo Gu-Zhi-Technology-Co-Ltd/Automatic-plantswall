@@ -20,6 +20,7 @@ sudo python3 main.py
 
 ## Structure
 ```
+.
 ├── .gradle
 ├── .idea                
 ├── app    
