@@ -1,10 +1,10 @@
 # Automatic-plantswall
-Automatic-plantswall
+Automatic-plantswall\
 南港高中數位科學實驗班 AIOT智慧務農植物牆
 
-## Usage
+## Setup
 ```terminal
-sudo python3 main.py #server
+sudo python3 main.py 
 ```
 ## Environment
 Android 8+
